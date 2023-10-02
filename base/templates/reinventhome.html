@@ -1,0 +1,33 @@
+{% extends 're_base.html' %}
+  {% load static %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/home3.css' %}">
+
+  {% block name %}
+  <h1 class="welcome"><span style="color:#ff5050">REINVENT</span> Your Working Day</h1>
+    {% load static %}
+    <h5 class="guide">If you have any question, please refer to this guide book! <a class="btn"  href="{% static 'file/SecurityCenterGuideBook_v1.pptx' %}" download>Guide</a></h5>
+  {% endblock %}
+
+    
+  {% block list %}
+  <div class="section">
+    <div class="myday">
+      <img src="../../static/image/myday.png">
+    </div>
+    <div class="flexhour">
+      <img src="../../static/image/flexible.png">
+    </div>
+    <div class="happyfriday">
+      <img src="../../static/image/happyfriday.png">
+    </div>
+    <div class="leader">
+      <img src="../../static/image/leader.png">
+    </div>
+  </div>
+  {% endblock %}
+
+  
+  
+  
+  
