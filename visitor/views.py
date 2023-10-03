@@ -135,6 +135,13 @@ def VapprovalView(request, data_id):
     return redirect('Vlist_url')
 
 @login_required
+def VrejectView(request, data_id):
+    approve_data=VisitorData.objects.get(id=data_id)
+    approve_data.approval_status="Rejected"
+    approve_data.save()
+    return redirect('Vlist_url')
+
+@login_required
 def VpassView(request, data_id):
     parking_data=VisitorData.objects.get(id=data_id)
     return render(request, 'parkingpass.html', {'parking_list':parking_data})

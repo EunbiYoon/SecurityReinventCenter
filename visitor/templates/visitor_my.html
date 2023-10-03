@@ -13,7 +13,6 @@
   <table class="table text-center" id="dataTable">
     <thead>
       <tr>
-        <th class="text-center">No</th>
         <th class="text-center">Visit Date</th>
         <th class="text-center">Visit Purpose</th>
         <th class="text-center">Status</th>
@@ -23,7 +22,6 @@
     <tbody>
       {% for visitor in visitor_mylist %}
         <tr>
-          <td>{{ visitor.id }}</td>
           <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.start_date }}{% if visitor.end_date %}~{{ visitor.end_date }}{% endif %}</a></td>
           <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.visitor_purpose|slice:"60" }}</a></td>
           <td><a href="{% url 'Vdetail_url' visitor.id %}">{{ visitor.approval_status }}</a></td>
@@ -38,15 +36,7 @@
         searching: true,
         paging: true,
         ordering: true,
-        pageLength: 10, // Number of records per page
-        "columnDefs":[
-            {
-                "targets":0,
-                "render":function(data, type, row, meta){
-                    return meta.row+1;
-                }
-            }
-        ]
+        pageLength: 10
     });
 </script>
 {% endblock %}

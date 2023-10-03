@@ -1,8 +1,0 @@
-1. 자바 스크립트로 search, table, tab menu, qr scan 등 다양한 기능을 front end를 디자인 하였다 restful APIs.  
-2. Responsive Design and ensuring cross-browser compatibility in LG Customer's video streaming service.
-3. Data Analysis Web application with Python Django Web application with MySQL, PostgreSQL, and MongoDB 
-
-
-1. Conducted RESTful APIs in Security & HR time off unit test and handle errors with insomnia and postman and using PostgreSQL and SQLite. Using Javascript, implemented calendar, search, qr scan, tab menu function.   
-2. Implemented LG video troubleshooting python flask web application with responsive design in cross-browser and operated customer's survey feedback with NoSQL MongoDB. Connected Gitlab CICD pipeline with AWS ECS utilized Docker.
-3. Performed Angular and boostrap in Quality & Cost Data Analysis Dashbord frontend and data management with MySQL and Json. Utilized git bash with AWS CLI for AWS EC2 and S3, Codecommit to deploy web application.
