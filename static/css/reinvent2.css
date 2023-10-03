@@ -196,3 +196,8 @@ nav form a:hover{
     color:black;
     font-weight: 300;
 }
+
+td{
+    vertical-align: center !important;
+    text-align: center !important;
+}
