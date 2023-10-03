@@ -97,8 +97,7 @@ def VlistView(request):
 def VdeleteView(request, data_id):
     selected_data=VisitorData.objects.get(pk=data_id)
     selected_data.delete()
-    previous_page=request.META.get('HTTP-REFERER','/')
-    return redirect(previous_page)
+    return redirect('Vmy_url')
 
 
 @login_required
