@@ -23,7 +23,7 @@ def customloginView(request):
         user=authenticate(request, username=get_id, password=get_password)
         if user is not None:
             login(request, user)
-            return redirect('home_url')        
+            return redirect('sr_home_url')        
         else:
             messages.error(request,"Wrong Credentials", extra_tags='login')
             return HttpResponseRedirect(reverse('account_url'))
@@ -78,10 +78,10 @@ def registerView(request):
         user.save()
         if user is not None:
             login(request, user)
-            return redirect('home_url')
+            return redirect('sr_home_url')
     
         
 def logoutView(request):
     logout(request)
-    return redirect('home_url')
+    return redirect('sr_home_url')
 

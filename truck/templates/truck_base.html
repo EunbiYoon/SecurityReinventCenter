@@ -1,7 +1,7 @@
 <div class="truck">
-  {% extends 'base.html' %}
+  {% extends 'sr_base.html' %}
 
-  {% block title %}Security Center - Truck Portal{% endblock %}
+  {% block title %}Security Center Truck Portal{% endblock %}
   
   {% block nav %}
     {% load static %}
@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home_url' %}">Security Center</a>
+            <a class="nav-link" href="{% url 'securityhome_url' %}">Security Center</a>
           </li>
           {% if user.is_superuser %}
           <li class="nav-item">
