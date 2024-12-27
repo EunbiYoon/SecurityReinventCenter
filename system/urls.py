@@ -21,11 +21,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('SR_Base.urls')),
     path('accounts/',include('user.urls')),
-    path('security/visitor/',include('visitor.urls')),
-    path('security/parking/',include('parking.urls')),
-    path('security/truck/',include('truck.urls')),
-    path('security/delivery/',include('delivery.urls')),
-    path('reinvent/',include('reinvent.urls'))
+    path('securityreinvent/',include('SecurityReinvent.SR_Base.urls')),
+    path('security/visitor/',include('SecurityReinvent.visitor.urls')),
+    path('security/parking/',include('SecurityReinvent.parking.urls')),
+    path('security/truck/',include('SecurityReinvent.truck.urls')),
+    path('security/delivery/',include('SecurityReinvent.delivery.urls')),
+    path('reinvent/',include('SecurityReinvent.reinvent.urls'))
 ]

@@ -33,19 +33,19 @@ ALLOWED_HOSTS = ['10.225.2.86', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'jazzmin',
+    'user',
+    'SecurityReinvent.SR_Base',
+    'SecurityReinvent.visitor',
+    'SecurityReinvent.parking',
+    'SecurityReinvent.truck',
+    'SecurityReinvent.delivery',
+    'SecurityReinvent.reinvent',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'SR_Base',
-    'user',
-    'visitor',
-    'parking',
-    'truck',
-    'delivery',
-    'reinvent'
 ]
 # CustomUser Define
 AUTH_USER_MODEL='user.CustomUser'
